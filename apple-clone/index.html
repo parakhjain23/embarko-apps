@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Apple Clone</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%231d1d1f' d='M12 7c-1-2 0-4 2-5-0 2-1 4-2 5zm5 5c0-2 1-3 2-4-1-1-2-2-4-2-1 0-2 1-3 1s-2-1-3-1c-2 0-5 2-5 6 0 5 3 10 5 10 1 0 2-1 3-1s2 1 3 1c2 0 3-3 4-5-1 0-2-2-2-5z'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Global nav -->
+<nav class="gnav">
+  <div class="gnav-inner">
+    <a href="#" class="logo" aria-label="Home">
+      <svg viewBox="0 0 24 24" width="16" height="16"><path fill="currentColor" d="M12 7c-1-2 0-4 2-5-0 2-1 4-2 5zm5 5c0-2 1-3 2-4-1-1-2-2-4-2-1 0-2 1-3 1s-2-1-3-1c-2 0-5 2-5 6 0 5 3 10 5 10 1 0 2-1 3-1s2 1 3 1c2 0 3-3 4-5-1 0-2-2-2-5z"/></svg>
+    </a>
+    <ul class="gnav-links">
+      <li><a href="#">Store</a></li>
+      <li><a href="#">Mac</a></li>
+      <li><a href="#">iPad</a></li>
+      <li><a href="#">iPhone</a></li>
+      <li><a href="#">Watch</a></li>
+      <li><a href="#">Vision</a></li>
+      <li><a href="#">AirPods</a></li>
+      <li><a href="#">TV &amp; Home</a></li>
+      <li><a href="#">Entertainment</a></li>
+      <li><a href="#">Accessories</a></li>
+      <li><a href="#">Support</a></li>
+    </ul>
+    <div class="gnav-icons">
+      <button aria-label="Search" id="searchBtn">
+        <svg viewBox="0 0 24 24" width="16" height="16"><circle cx="10" cy="10" r="6.5" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M15 15l5 5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+      </button>
+      <button aria-label="Bag">
+        <svg viewBox="0 0 24 24" width="16" height="16"><path d="M5 8h14l-1 13H6L5 8zm4 0V6a3 3 0 016 0v2" fill="none" stroke="currentColor" stroke-width="1.6"/></svg>
+      </button>
+      <button class="menu-btn" aria-label="Menu" id="menuBtn"><span></span><span></span></button>
+    </div>
+  </div>
+  <div class="search-panel" id="searchPanel">
+    <input type="search" placeholder="Search apple.com">
+    <p>Quick Links</p>
+    <ul><li><a href="#">→ Find a Store</a></li><li><a href="#">→ Accessories</a></li><li><a href="#">→ Gift Cards</a></li></ul>
+  </div>
+</nav>
+
+<!-- Ribbon -->
+<div class="ribbon">
+  Get up to 4% back on eligible purchases with our card. <a href="#">Learn more &gt;</a>
+</div>
+
+<main>
+  <!-- Full-width heroes -->
+  <section class="hero light">
+    <h2>iPhone</h2>
+    <h3>Meet the latest lineup.</h3>
+    <div class="ctas"><a class="btn" href="#">Learn more</a><a class="btn outline" href="#">Shop iPhone</a></div>
+    <img src="https://images.unsplash.com/photo-1510557880182-3d4d3cba35a5?w=1600&h=700&fit=crop" alt="">
+  </section>
+
+  <section class="hero dark">
+    <h2>iPhone Pro</h2>
+    <h3>Bigger power. Brighter display.</h3>
+    <div class="ctas"><a class="btn" href="#">Learn more</a><a class="btn outline" href="#">Buy</a></div>
+    <img src="https://images.unsplash.com/photo-1592750475338-74b7b21085ab?w=1600&h=700&fit=crop" alt="">
+  </section>
+
+  <section class="hero light">
+    <h2>MacBook Air</h2>
+    <h3>Thin. Light. Seriously fast.</h3>
+    <div class="ctas"><a class="btn" href="#">Learn more</a><a class="btn outline" href="#">Buy</a></div>
+    <img src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8?w=1600&h=700&fit=crop" alt="">
+  </section>
+
+  <!-- Tile grid -->
+  <section class="grid">
+    <div class="tile dark">
+      <h2>Watch</h2><h3>Your health, on your wrist.</h3>
+      <div class="ctas"><a class="btn" href="#">Learn more</a><a class="btn outline" href="#">Buy</a></div>
+      <img src="https://images.unsplash.com/photo-1434493789847-2f02dc6ca35d?w=900&h=600&fit=crop" alt="">
+    </div>
+    <div class="tile light">
+      <h2>iPad Pro</h2><h3>Impossibly thin. Wildly capable.</h3>
+      <div class="ctas"><a class="btn" href="#">Learn more</a><a class="btn outline" href="#">Buy</a></div>
+      <img src="https://images.unsplash.com/photo-1544244015-0df4b3ffc6b0?w=900&h=600&fit=crop" alt="">
+    </div>
+    <div class="tile light">
+      <h2>AirPods</h2><h3>Sound that surrounds you.</h3>
+      <div class="ctas"><a class="btn" href="#">Learn more</a><a class="btn outline" href="#">Buy</a></div>
+      <img src="https://images.unsplash.com/photo-1600294037681-c80b4cb5b434?w=900&h=600&fit=crop" alt="">
+    </div>
+    <div class="tile dark">
+      <h2>Vision Pro</h2><h3>Welcome to spatial computing.</h3>
+      <div class="ctas"><a class="btn" href="#">Learn more</a><a class="btn outline" href="#">Buy</a></div>
+      <img src="https://images.unsplash.com/photo-1622979135225-d2ba269cf1ac?w=900&h=600&fit=crop" alt="">
+    </div>
+    <div class="tile light">
+      <h2>Trade In</h2><h3>Get credit toward a new device.</h3>
+      <div class="ctas"><a class="btn" href="#">Get your estimate</a></div>
+      <img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=900&h=600&fit=crop" alt="">
+    </div>
+    <div class="tile dark">
+      <h2>Card</h2><h3>Daily cash back, every purchase.</h3>
+      <div class="ctas"><a class="btn" href="#">Learn more</a><a class="btn outline" href="#">Apply now</a></div>
+      <img src="https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=900&h=600&fit=crop" alt="">
+    </div>
+  </section>
+
+  <!-- TV+ carousel -->
+  <section class="carousel">
+    <div class="track" id="track">
+      <div class="slide"><img src="https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?w=1400&h=700&fit=crop" alt=""><div class="cap"><span>Drama</span><h4>Stream now</h4><a class="btn light-btn" href="#">Watch now</a></div></div>
+      <div class="slide"><img src="https://images.unsplash.com/photo-1536440136628-849c177e76a1?w=1400&h=700&fit=crop" alt=""><div class="cap"><span>Comedy</span><h4>New season</h4><a class="btn light-btn" href="#">Watch now</a></div></div>
+      <div class="slide"><img src="https://images.unsplash.com/photo-1485846234645-a62644f84728?w=1400&h=700&fit=crop" alt=""><div class="cap"><span>Thriller</span><h4>Stream now</h4><a class="btn light-btn" href="#">Watch now</a></div></div>
+      <div class="slide"><img src="https://images.unsplash.com/photo-1517604931442-7e0c8ed2963c?w=1400&h=700&fit=crop" alt=""><div class="cap"><span>Sports</span><h4>Live this week</h4><a class="btn light-btn" href="#">Watch now</a></div></div>
+      <div class="slide"><img src="https://images.unsplash.com/photo-1440404653325-ab127d49abc1?w=1400&h=700&fit=crop" alt=""><div class="cap"><span>Sci-Fi</span><h4>Stream now</h4><a class="btn light-btn" href="#">Watch now</a></div></div>
+    </div>
+    <div class="dots" id="dots"></div>
+  </section>
+
+  <!-- Endless entertainment -->
+  <section class="ent">
+    <h2>Endless entertainment.</h2>
+    <div class="ent-row">
+      <div><img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=600&h=600&fit=crop" alt=""><p>Music</p></div>
+      <div><img src="https://images.unsplash.com/photo-1511512578047-dfb367046420?w=600&h=600&fit=crop" alt=""><p>Arcade</p></div>
+      <div><img src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?w=600&h=600&fit=crop" alt=""><p>Fitness+</p></div>
+      <div><img src="https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=600&h=600&fit=crop" alt=""><p>News+</p></div>
+    </div>
+  </section>
+</main>
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="footer-inner">
+    <p class="notes">
+      1. Offers subject to change. This is a demo clone for learning purposes only. Images are placeholders.
+    </p>
+    <div class="dir">
+      <div><h5>Shop and Learn</h5><a href="#">Store</a><a href="#">Mac</a><a href="#">iPad</a><a href="#">iPhone</a><a href="#">Watch</a><a href="#">Vision</a><a href="#">AirPods</a><a href="#">TV &amp; Home</a><a href="#">Accessories</a><a href="#">Gift Cards</a></div>
+      <div><h5>Account</h5><a href="#">Manage Your Account</a><a href="#">Store Account</a><a href="#">iCloud.com</a><h5>Entertainment</h5><a href="#">One</a><a href="#">TV+</a><a href="#">Music</a><a href="#">Arcade</a><a href="#">Fitness+</a><a href="#">Podcasts</a><a href="#">Books</a></div>
+      <div><h5>Store</h5><a href="#">Find a Store</a><a href="#">Genius Bar</a><a href="#">Today at Store</a><a href="#">Group Reservations</a><a href="#">Financing</a><a href="#">Trade In</a><a href="#">Order Status</a><a href="#">Shopping Help</a></div>
+      <div><h5>For Business</h5><a href="#">Business</a><a href="#">Shop for Business</a><h5>For Education</h5><a href="#">Education</a><a href="#">Shop for Education</a><h5>For Healthcare</h5><a href="#">Healthcare</a></div>
+      <div><h5>Values</h5><a href="#">Accessibility</a><a href="#">Environment</a><a href="#">Privacy</a><a href="#">Supply Chain</a><h5>About</h5><a href="#">Newsroom</a><a href="#">Leadership</a><a href="#">Careers</a><a href="#">Investors</a><a href="#">Contact</a></div>
+    </div>
+    <p class="more">More ways to shop: <a href="#">Find a Store</a> or <a href="#">other retailer</a> near you. Or call 1-800-000-0000.</p>
+    <div class="legal">
+      <span>Copyright © 2026 Demo Clone. All rights reserved.</span>
+      <span class="legal-links"><a href="#">Privacy Policy</a><a href="#">Terms of Use</a><a href="#">Sales and Refunds</a><a href="#">Legal</a><a href="#">Site Map</a></span>
+      <span>United States</span>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
