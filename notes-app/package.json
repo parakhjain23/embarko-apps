@@ -1,0 +1,7 @@
+{
+  "name": "notes-app",
+  "private": true,
+  "type": "module",
+  "scripts": { "start": "node server.js" },
+  "dependencies": { "viasocket-apps": "^0.8.0" }
+}

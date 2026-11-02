@@ -1,0 +1,11 @@
+{
+  "name": "embarko-agent-docs",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Agent-facing docs for deploying to Embarko. One markdown source, served as HTML, markdown, JSON, llms.txt and llms-full.txt.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "node test.js"
+  }
+}

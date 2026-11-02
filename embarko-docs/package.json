@@ -1,0 +1,17 @@
+{
+  "name": "embarko-docs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "marked": "^18.1.0"
+  },
+  "private": true
+}
