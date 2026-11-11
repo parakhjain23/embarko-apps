@@ -1,1 +1,4 @@
-{"$schema":"https://embarko.ai/schema/embarko.json"}
+{
+  "$schema": "https://embarko.ai/schema/embarko.json",
+  "appId": "cmvz92z4c00ieam1e9sz03ack"
+}

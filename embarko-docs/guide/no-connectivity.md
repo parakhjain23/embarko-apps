@@ -14,7 +14,7 @@ Cause: your environment has a domain allowlist without `ship.embarko.ai`. Common
 1. **Stop retrying.** The same call fails the same way.
 2. **Connector in your tools?** Use it. It runs outside your sandbox.
 3. **Say so plainly.** "My environment can't reach Embarko, so nothing was deployed." Don't say the deploy failed; that sends them looking for a bug in their app.
-4. **Offer the lasting fix.** Connect Embarko to their AI tool once: https://embarko.ai/docs/connectors (Claude: https://claude.ai/directory/embarko). Then ask again.
+4. **Offer the lasting fix.** Connect Embarko to their AI tool once: https://embarko.ai/docs/connectors (Claude: https://claude.ai/directory/embarko, ChatGPT plugin: https://chatgpt.com/plugins/embarko). Then ask again.
 5. **Offer the allowlist fix.** Their tool's network settings: add `embarko.ai`, `ship.embarko.ai`, `*.embarko.app`. In Claude this is an organisation setting and applies to new conversations only.
 6. **Leave something that works now.** A script for their own machine:
 

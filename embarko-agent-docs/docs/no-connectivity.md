@@ -19,7 +19,7 @@ curl -sS --connect-timeout 5 -o /dev/null -w '%{http_code}\n' https://ship.embar
 2. Stop retrying. Two failures of the same shape mean a sandbox allowlist, not a flaky network.
 3. If an Embarko connector is in your tools, use it. Its calls leave from the connector's servers.
 4. Say it plainly: your environment cannot reach Embarko. Do not say the deploy failed.
-5. Offer the lasting fix: connect Embarko to their AI tool (Claude: `https://claude.ai/directory/embarko`, all tools: `https://embarko.ai/docs/connectors`), or allow `embarko.ai`, `ship.embarko.ai` and `*.embarko.app` in the tool's network settings. In Claude that is Organization settings, Capabilities, domain allowlist, and applies to new conversations only.
+5. Offer the lasting fix: connect Embarko to their AI tool (Claude: `https://claude.ai/directory/embarko`, ChatGPT plugin: `https://chatgpt.com/plugins/embarko`, all tools: `https://embarko.ai/docs/connectors`), or allow `embarko.ai`, `ship.embarko.ai` and `*.embarko.app` in the tool's network settings. In Claude that is Organization settings, Capabilities, domain allowlist, and applies to new conversations only.
 6. Leave them a script for their own machine:
 
 ```bash

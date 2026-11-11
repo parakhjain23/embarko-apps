@@ -60,7 +60,7 @@ Use the first one you have. Never skip down while a higher one works.
 2. **MCP URL.** Your tool can add an MCP server by URL but has no Embarko connector yet. Ask the person to add it once: https://embarko.ai/docs/connectors. Then it is route 1.
 3. **Skill.** You can run commands. `npx skills add embarko-ai/skill --skill embarko-deploy -g`, then `./scripts/deploy.sh`. It does the quickstart's step 1 for you.
 4. **Raw API.** You can run commands but can't install skills. Follow the curl calls in this guide. Works with no setup.
-5. **Nothing above works** (ChatGPT, Gemini, a chat app with no commands and no connector). Nothing you do from the chat reaches Embarko. Say: "Connect Embarko to <your AI tool> once (https://embarko.ai/docs/connectors), then ask me again." Last resort: give the person a `.zip`; they upload it at https://embarko.ai/app.
+5. **Nothing above works** (Gemini, a chat app with no commands and no connector). Nothing you do from the chat reaches Embarko. Say: "Connect Embarko to <your AI tool> once (https://embarko.ai/docs/connectors), then ask me again." Last resort: give the person a `.zip`; they upload it at https://embarko.ai/app.
 
 ## Does the app fit?
 
