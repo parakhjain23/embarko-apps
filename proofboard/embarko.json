@@ -1,0 +1,11 @@
+{
+  "$schema": "https://embarko.ai/schema/embarko.json",
+  "schedules": [
+    {
+      "cron": "0 19 * * *",
+      "path": "/tasks/daily-summary",
+      "timezone": "Asia/Kolkata"
+    }
+  ],
+  "appId": "cmwbze6200giyudz44fs2vll6"
+}
