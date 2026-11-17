@@ -1,0 +1,40 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-geist-sans), system-ui, sans-serif;
+}
+
+/* chat widget motion */
+@keyframes hello-pop {
+  from { opacity: 0; transform: translateY(12px) scale(0.97); }
+}
+.hello-pop { animation: hello-pop 0.22s cubic-bezier(0.2, 0.9, 0.3, 1.2); transform-origin: bottom right; }
+@keyframes hello-ring {
+  0% { box-shadow: 0 0 0 0 rgb(255 255 255 / 0.35); }
+  100% { box-shadow: 0 0 0 28px rgb(255 255 255 / 0); }
+}
+.hello-ring { border-radius: 9999px; animation: hello-ring 1.4s ease-out infinite; }
+@media (prefers-reduced-motion: reduce) {
+  .hello-pop, .hello-ring { animation: none; }
+}
